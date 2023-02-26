@@ -128,7 +128,7 @@ int main(int argc, char** argv) {
  
     clock_t endr = clock();
     running_time += (double)(endr - begin);
-    printf("The running time is %f", running_time);
+    printf("%f", running_time);
 
 
 return 0;
