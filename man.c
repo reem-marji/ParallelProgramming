@@ -103,11 +103,11 @@ int main(int argc, char** argv) {
 
                 i = finalImage[y * width + x];
 
-                int a = (i * 13) % 256;
-                int b = (i * 17) % 256;
-                int c = (i * 23) % 256;
+                int r = (i * 13) % 256;
+                int g = (i * 17) % 256;
+                int b = (i * 23) % 256;
 
-                printf("%d %d %d\n", a, b, c);
+                printf("%d %d %d\n", r, g, b);
 
             }
 
@@ -125,10 +125,10 @@ int main(int argc, char** argv) {
     free(image);
     MPI_Finalize();
   
-    sleep(3);
+ 
     clock_t endr = clock();
-    running_time += (double)(endr - begin) / CLOCKS_PER_SEC;
-    printf("The running time is %f seconds", running_time);
+    running_time += (double)(endr - begin);
+    printf("The running time is %f", running_time);
 
 
 return 0;
