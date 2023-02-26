@@ -105,8 +105,9 @@ int main(int argc, char** argv) {
                 int r = (i * 13) % 256;
                 int g = (i * 17) % 256;
                 int b = (i * 23) % 256;
-
-                printf("%d %d %d\n", r, g, b);
+		    
+		// to check if the code is running correctly 
+                printf("%d %d %d     Running\n", r, g, b);
 
             }
 
