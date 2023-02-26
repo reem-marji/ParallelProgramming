@@ -4,7 +4,6 @@
 #include <time.h>   
 #include <math.h>
 
-
 #define height 600
 #define width 800
 #define MAX_ITERATION 1000
